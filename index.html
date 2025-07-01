@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANTA - Sabor Laranja | Site Oficial</title>
+    <meta name="description" content="Descubra o sabor refrescante e vibrante da Fanta Laranja. Uma explosão de frutas que conquista paladares de todas as idades.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="fanta-logo">
+                <span>F</span>
+                <span>A</span>
+                <span>N</span>
+                <span>T</span>
+                <span>A</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">FANTA</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#produtos" class="nav-link">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com" class="nav-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">FANTA</span>
+                    <span class="title-subtitle">Sabor Laranja</span>
+                </h1>
+                <p class="hero-description">
+                    Com seu sabor refrescante e vibrante, essa soda é uma verdadeira explosão de frutas que conquista paladares de todas as idades.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('produtos')">
+                        <span>Comprar Agora</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('sobre')">
+                        <span>Saiba Mais</span>
+                        <i class="fas fa-info-circle"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/fanta-laranja.svg" alt="Garrafa Fanta Laranja" class="hero-bottle-img">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre a Fanta</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sabor natural</h3>
+                        <p>Ao abrir uma lata ou garrafa de Fanta Laranja, somos imediatamente envolvidos por um aroma cítrico que promete uma experiência única.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Experiência única</h3>
+                        <p>É uma combinação perfeita de doçura e acidez, que remete à frescura de laranjas recém-colhidas.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Memórias de verão</h3>
+                        <p>Cada gole é uma viagem ao verão, evocando memórias de dias ensolarados e momentos de descontração.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h3>Refrescância inigualável</h3>
+                        <p>A efervescência da bebida realça ainda mais essa sensação, proporcionando uma refrescância inigualável.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos produtos</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-product="fruit-punch">
+                    <div class="product-image">
+                        <img src="images/fanta-fruit-punch.svg" alt="Fanta Fruit Punch" class="product-bottle-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fanta Fruit Punch</h3>
+                        <p>Uma mistura explosiva de frutas tropicais que vai te surpreender a cada gole.</p>
+                        <div class="product-price">
+                            <span class="price">R$ 4,99</span>
+                        </div>
+                        <button class="btn btn-primary product-btn">
+                            <span>Comprar Agora</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card featured" data-product="laranja">
+                    <div class="product-badge">Mais popular</div>
+                    <div class="product-image">
+                        <img src="images/fanta-laranja.svg" alt="Fanta Laranja" class="product-bottle-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fanta Laranja</h3>
+                        <p>O sabor clássico que conquistou o mundo com sua refrescância e aroma cítrico único.</p>
+                        <div class="product-price">
+                            <span class="price">R$ 4,49</span>
+                        </div>
+                        <button class="btn btn-primary product-btn">
+                            <span>Comprar Agora</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="berry">
+                    <div class="product-image">
+                        <img src="images/fanta-berry.svg" alt="Fanta Berry" class="product-bottle-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fanta Berry</h3>
+                        <p>Uma explosão de frutas vermelhas que vai te deixar com gosto de quero mais.</p>
+                        <div class="product-price">
+                            <span class="price">R$ 4,99</span>
+                        </div>
+                        <button class="btn btn-primary product-btn">
+                            <span>Comprar Agora</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em contato</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>kauehenriqueb4@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <p>(41) 99505-2661 </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Endereço</h4>
+                            <p>Av. Curitiba, 1000 - Curitiba, PR</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nome</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Mensagem</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Enviar Mensagem</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FANTA</h3>
+                    <p>Descubra o sabor refrescante que conquistou o mundo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#produtos">Fanta Laranja</a></li>
+                        <li><a href="#produtos">Fanta Fruit Punch</a></li>
+                        <li><a href="#produtos">Fanta Berry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fanta. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 
